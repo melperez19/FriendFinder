@@ -1,0 +1,48 @@
+
+    body {
+        background-image: url(../images/1-best-friend-photo-ideas.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+            
+    }
+
+    .container {
+        background-color: gray;
+        opacity: .8;
+        border-radius: 50px;
+        border: 3px solid pink;
+        box-shadow: 20px black;
+        position: relative;
+        text-shadow: 2px 2px 4px black;
+        padding: 10px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    #submit {
+        width: 97%;
+        opacity: 1;
+        background-color: blue;
+    }
+
+    .btn {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: white;
+        margin-left: 15px;
+    }
+
+    a:hover {
+    color: orange;
+    }
+
+    h2, h3 {
+        text-shadow: 2px 2px 4px red;; 
+    }
+
+    h2 {
+        font-family: 'Coiny', cursive;
+    }

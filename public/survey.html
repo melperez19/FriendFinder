@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <!-- jQuery min Version -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+    <!-- My Style CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+
+    <title>FriendFinder-Survey</title>
+</head>
+
+
+<body>
+    <div class="container text-warning">
+        <h2 class="text-center">Survey Questions</h2>
+        <hr>
+        <!-- About You Name and Image -->
+        <h3><strong>About You</strong></h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="username" class="form-control" required>
+
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="userphoto" class="form-control" required>
+
+        <hr>
+        <!-- Start of Survey Questions -->
+        <h3><strong>Question 1</strong></h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <select class="userSelected" id="question1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 2</strong></h3>
+        <h4>You like to think of the glass half full.</h4>
+        <select class="userSelected" id="question2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 3</strong></h3>
+        <h4>You would rather relax indoors than to go out partying.</h4>
+        <select class="userSelected" id="question3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 4</strong></h3>
+        <h4>You're more focused on the here and now as oppossed to planning ahead.</h4>
+        <select class="userSelected" id="question4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 5</strong></h3>
+        <h4>You prefer a juicy burger over a keto salad.</h4>
+        <select class="userSelected" id="question5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 6</strong></h3>
+        <h4>Your known as a fun, witty person.</h4>
+        <select class="userSelected" id="question6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 7</strong></h3>
+        <h4>Friends say you're like the mom of the group.</h4>
+        <select class="userSelected" id="question7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 8</strong></h3>
+        <h4>Family is everything to you.</h4>
+        <select class="userSelected" id="question8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 9</strong></h3>
+        <h4>You prefer dance music over hip hop.</h4>
+        <select class="userSelected" id="question9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3><strong>Question 10</strong></h3>
+        <h4>You think it's better to have few close friends than many aquantances.</h4>
+        <select class="userSelected" id="question10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <!-- End of Survey Questions -->
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block m-3" id="submit"><i class="fa fa-check-circle"
+                aria-hidden="true"></i>
+            Submit</button>
+
+        <!-- Footer with Route Links -->
+        <footer>
+            <a href="/api/friends"> API Friends |</a>
+            <a href="https://github.com/melperez19/FriendFinder"> Github Repo |</a>
+            <a href="/"><span class="fas fa-home"></span> Home</a>
+        </footer>
+    </div>
+    </div>
+
+    <!-- Modal Popup for Best Compatible Friend Results -->
+    <div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bestMatch">Best Match</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Modal Body For Best Match Name and Image -->
+                <div class="modal-body">
+                    <h2 id="bestFriendsName"></h2>
+                    <img id="bestFriendsImage" src="" alt="bestFriendsImage" />
+                </div>
+                <!--Modal Footer with Close Button -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!---------------------------------------------Inline Javascript Code Below--------------------------------------------------------->
+    <script type="text/javascript">
+        
+        // Capture the form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            // Form validation
+            function ConfirmUserForm() {
+                var validUserInput = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        validUserInput = false;
+                    }
+                });
+
+                $(".userSelected").each(function () {
+
+                    if ($(this).val() === "") {
+                        validUserInput = false;
+                    }
+                });
+                return validUserInput;
+            }
+
+            // If all required fields are filled
+            if (ConfirmUserForm()) {
+                // Create an object for the user"s data
+                var newUserData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#question1").val(),
+                        $("#question2").val(),
+                        $("#question3").val(),
+                        $("#question4").val(),
+                        $("#question5").val(),
+                        $("#question6").val(),
+                        $("#question7").val(),
+                        $("#question8").val(),
+                        $("#question9").val(),
+                        $("#question10").val()
+                    ]
+                };
+
+                // AJAX post the data to the friends API.
+                $.post("/api/friends", newUserData, function (data) {
+
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#bestFriendsName").text(data.name);
+                    $("#bestFriendsImage").attr("src", data.photo);
+
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+        });
+
+    </script>
+
+
+</body>
+
+</html>
