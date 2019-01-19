@@ -46,3 +46,8 @@
     h2 {
         font-family: 'Coiny', cursive;
     }
+
+    #bestFriendsImage {
+        width: 200px;
+        height: 300px;
+    }

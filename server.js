@@ -10,7 +10,7 @@ var path = require("path");
 var app = express();
 var PORT = process.env.PORT || 8080;
 
-// Set up the Express app to handle static data
+// Set up the Express app to handle static data such as css and images
 app.use(express.static('public'));
 
 

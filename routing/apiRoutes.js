@@ -14,41 +14,43 @@ module.exports = function (app) {
     // This route will also be used to handle the compatibility logic.
     // Add New Friends - takes in JSON input
     app.post("/api/friends", function (request, response) {
-
         // req.body is equal to the JSON post sent from the user
         var newFriend = request.body;
-        var score = friends.scores;
-        var newScore = newFriend.scores;
+        newFriend.scores = newFriend.scores.map(function(score){
+            return parseInt(score);
+        });
         var totalPoints = 0;
         var bestCompatibility = 1000;
-        var index = -1;
+        var bestMatchingFriend = friends[0];
 
-        for (var i = 0; i < friends.length; i++) {
+        friends.forEach(function(friend) {
             // Look through all info available in the friends database
+            var friendScores = friend.scores;
             totalPoints = 0;
-            for (var j = 0; j < newScore[j].length; j++) {
-                // Calculate the total score value of every new friend
-                var difference = Math.abs(newScore[j] - score[i]);
-                console.log(newScore);
+
+            newFriend.scores.forEach((newFriendScore, index) => {
+                var friendScore = friendScores[index];
+                var difference = Math.abs(newFriendScore - friendScore);
                 totalPoints += difference;
-            }
+            })
+
             if (totalPoints < bestCompatibility) {
                 bestCompatibility = totalPoints;
-                index = i;
+                bestMatchingFriend = friend;
             }
-
-        }
-
+        })
 
         // Using a RegEx Pattern to remove spaces from newFriend
         // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+        
         newFriend.routeName = newFriend.name.replace(/\s+/g, "").toLowerCase();
 
         console.log(newFriend);
+        console.log(bestMatchingFriend);
 
         friends.push(newFriend);
 
-        response.json(newFriend);
+        response.json(bestMatchingFriend);
     });
 };
 

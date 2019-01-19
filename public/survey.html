@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <!-- jQuery min Version -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+    crossorigin="anonymous"></script>
+
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
 
@@ -194,7 +195,7 @@
 
     <!---------------------------------------------Inline Javascript Code Below--------------------------------------------------------->
     <script type="text/javascript">
-        
+     
         // Capture the form inputs
         $("#submit").on("click", function (event) {
             event.preventDefault();
@@ -221,8 +222,8 @@
             if (ConfirmUserForm()) {
                 // Create an object for the user"s data
                 var newUserData = {
-                    name: $("#name").val(),
-                    photo: $("#photo").val(),
+                    name: $("#username").val(),
+                    photo: $("#userphoto").val(),
                     scores: [
                         $("#question1").val(),
                         $("#question2").val(),
