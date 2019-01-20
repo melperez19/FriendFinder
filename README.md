@@ -1,6 +1,6 @@
 # Friend Finder - Node and Express Servers
 
-[Click here to demo the site!](https://melperez19-friendfinder.herokuapp.com/survey)
+[Click here to demo the site!](https://melperez19-friendfinder.herokuapp.com)
 
 ### Overview
 
